@@ -1,0 +1,17 @@
+apiVersion: rabbitmq.com/v1beta1
+kind: RabbitmqCluster
+metadata:
+  name: rabbitmq
+spec:
+  serviceAccountName: rabbitmq-server
+  replicas: 1
+  rabbitmq:
+    additionalConfig: |
+      cluster_partition_handling = pause_minority
+      disk_free_limit.relative = 1.0
+      collect_statistics_interval = 10000
+      default_user=admin
+      default_pass=aksd@1234
+  persistence:
+    storageClassName: nfs-client
+    storage: "10Gi"
