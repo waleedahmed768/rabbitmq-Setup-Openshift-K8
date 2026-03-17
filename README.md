@@ -1,0 +1,1 @@
+# rabbitmq-Setup-Openshift-K8
