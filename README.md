@@ -1,4 +1,6 @@
 # rabbitmq-Setup-Openshift-K8
+https://github.com/rabbitmq/cluster-operator/blob/main/docs/examples/additionalPorts/rabbitmq.yaml
+
 $kubectl apply -f "https://github.com/rabbitmq/cluster-operator/releases/latest/download/cluster-operator.yml"
 # namespace/rabbitmq-system created
 # customresourcedefinition.apiextensions.k8s.io/rabbitmqclusters.rabbitmq.com created
